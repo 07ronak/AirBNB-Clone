@@ -1,5 +1,5 @@
 const Listing = require("../models/listing.js");
-const { geocode } = require("../public/JS/graphHopper.js");
+const { geocode } = require("../public/js/graphHopper.js");
 
 module.exports.index = async (req, res) => {
   const allListings = await Listing.find({});
